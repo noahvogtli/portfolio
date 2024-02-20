@@ -201,12 +201,26 @@ body
     display: flex;
     flex-direction: row;
     margin: 2%;
+    text-decoration: solid;
+    color: black;
 }
 
 .githubButton
 {
-    padding-left: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 2%;
+    
+}
+
+.githubButton:hover
+{
+    cursor: pointer;
+}
+
+.title
+{
+    text-decoration: underline;
     padding-right: 5%;
-    padding-top: 5%;
-    margin: 5%;
+    margin-right: 5%;
 }
