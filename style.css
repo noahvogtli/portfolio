@@ -1,8 +1,26 @@
+@font-face {
+    font-family: "Urbanist";
+    src: url("/data/Urbanist/Urbanist-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("/data/Open_Sans/OpenSans-VariableFont_wdth/,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("/data/Lato/Lato-Regular.ttf") format("truetype");
+}
+
 body
 {
     background-color: white;
     margin: 0;
     padding: 0;
+    scroll-margin-top: 20px;
+    font-size: 1.5vw;
+    font-family: 'Lato';
 }
 
 .responsive 
@@ -13,7 +31,7 @@ body
     border-color: black;
     border-style: solid;
     margin-top: 5%;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
 /* Add a black background color to the top navigation */
@@ -21,7 +39,6 @@ body
     background-color: rgb(76, 76, 76);
     overflow: hidden;
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -31,7 +48,7 @@ body
     text-align: center;
     padding: 1.5% 1.1%;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1vw;
 }
 
 /* Change the color of links on hover */
@@ -65,11 +82,15 @@ body
 
 .flex-container
 {
+    text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
     /* border-style: solid;
     border: 1%; */
+    scroll-margin-top: 75px;
+
 }
 
 .aboutme
@@ -80,7 +101,6 @@ body
     border: 1%; */
     flex-grow: 8;
     line-height: 200%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: auto;
 
 }
@@ -89,7 +109,7 @@ body
 {
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: 100px;
+    font-size: 5vw;
     font-weight: bold;
     text-align: left;
 }
@@ -104,4 +124,89 @@ body
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 102px;
+}
+
+.resume-heading
+{
+    padding-top: 5%;
+    display: flex;
+    /* border-style: solid;
+    border: 1%; */
+    padding-left: 15.5%;
+}
+
+.download-button {
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 5%;
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    margin-left: 4%;
+
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+}
+
+.space
+{
+    padding: 10%;
+}
+
+.filetypeDropdown
+{
+    margin-top: 5%;
+    margin-left: 1%;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+.projects-heading
+{
+    padding-top: 5%;
+    display: flex;
+    /* border-style: solid;
+    border: 1%; */
+}
+
+
+.project-flex
+{
+    text-align: left;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border-style: solid;
+    border: 1%; */
+    scroll-margin-top: 75px;
+}
+
+
+.project-boxes
+{
+    border-style: solid;
+    border: 1%;
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+.githubButton
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    margin: 5%;
 }
