@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body id="home">
     <div class="topnav" id="myHeader">
@@ -16,11 +19,11 @@
     </div>
     <div class="flex-container">
         <img src="data/SquarePicture.JPG" alt="A picture of me" class="responsive">
-        <div class="aboutme">Hello, my name is 
-            <div class="largename">Noah Vogtli</div>
-                I am a second year Software Engineering student at Rochester Institute of Technology.
-            <br>I am currently looking for a Fall 2024 co-op position.
-            <br>Find out more about me below</div>
+        <div class="about-me">
+            <article>
+                <p>Hello, my name is <h1>Noah Vogtli</h1> I am a second year Software Engineering Student at Rochester Institute of Technology.<br>I am currently looking for a co-op for Fall 2024.<br>Read more about me below:
+            </article>
+        </div>
     </div>
     <!-- <embed src="data/Noah_Vogtli_Resume.pdf" type="application/pdf" width="50%" height="600px"> -->
     <div class="space"></div>
@@ -40,15 +43,29 @@
     <h1 class="projects-heading">Projects</h1>
     </div>
     <div class="flex-container">
-        <a href="mousemaze.html" class="project-boxes">
-            <h3>Mouse Maze</h3>
-        </a>
-        <a class="project-boxes" href="estore.html">
-            <h3>Hockey Jersey E-Store</h3>
-        </a>
-        <a class="project-boxes" href="weatherapp.html">
-            <h3>Weather App</h3>
-        </a>
+        <div class="project-boxes">
+            <a href="mousemaze.html" style="color: black;">
+                <h3>Mouse Maze</h3>
+            </a>
+        </div>
+        <div class="project-boxes">
+            <a href="estore.html" style="color: black;">
+                <h3>Hockey Jersey E-Store</h3>
+            </a>
+        </div>
+        <div class="project-boxes">
+            <a href="weatherapp.html" style="color: black;">
+                <h3>Weather App</h3>
+            </a>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="flex-container" id="about">
+        <h1 class="projects-heading">About</h1>
+    </div>
+    <div class="space"></div>
+    <div class="flex-container" id="Contact">
+        <h1 class="projects-heading">Contact</h1>
     </div>
     <script src="script.js"></script>
 </body>

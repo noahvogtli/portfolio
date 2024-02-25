@@ -19,19 +19,24 @@ body
     margin: 0;
     padding: 0;
     scroll-margin-top: 20px;
-    font-size: 1.5vw;
-    font-family: 'Lato';
+    font-size: 20px;
+    font-family: 'Urbanist';
 }
 
-.responsive 
+.flex-container
 {
-    width: 20%;
-    height: auto;
+    margin-top: 5%;
+
+}
+
+.responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     border: 1%;
     border-color: black;
     border-style: solid;
-    margin-top: 5%;
-    margin-left: 2%;
 }
 
 /* Add a black background color to the top navigation */
@@ -74,45 +79,7 @@ body
     margin: 0 15px;
 }
 
-.name {
-    display: inline-block;
-    color: white;
-    margin-left: 20px;
-}
 
-.flex-container
-{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* border-style: solid;
-    border: 1%; */
-    scroll-margin-top: 75px;
-
-}
-
-.aboutme
-{
-    padding-left: 20%;
-    text-align: left;
-    /* border-style: solid;
-    border: 1%; */
-    flex-grow: 8;
-    line-height: 200%;
-    margin: auto;
-
-}
-
-.largename
-{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 5vw;
-    font-weight: bold;
-    text-align: left;
-}
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -122,105 +89,33 @@ body
 }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky + .content 
+{
     padding-top: 102px;
 }
 
-.resume-heading
+.about-me
 {
-    padding-top: 5%;
-    display: flex;
-    /* border-style: solid;
-    border: 1%; */
-    padding-left: 15.5%;
-}
-
-.download-button {
-    display: flex;
-    padding: 10px 20px;
-    margin-top: 5%;
-    font-size: 1vw;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3498db;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    display: flex;
-    margin-left: 4%;
-
-}
-
-.download-button:hover {
-    background-color: #2980b9;
-}
-
-.space
-{
-    padding: 10%;
-}
-
-.filetypeDropdown
-{
-    margin-top: 5%;
-    margin-left: 1%;
-    padding: 0.5%;
-    border-radius: 5px;
-}
-
-.projects-heading
-{
-    padding-top: 5%;
-    display: flex;
-    /* border-style: solid;
-    border: 1%; */
-}
-
-
-.project-flex
-{
+    margin-top: 5vw;
+    margin-left: 5vw;
     text-align: left;
-    justify-content: start;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* border-style: solid;
-    border: 1%; */
-    scroll-margin-top: 75px;
 }
 
+@media only screen and (min-width: 1000px) {
 
-.project-boxes
-{
-    border-style: solid;
-    border: 1%;
-    display: flex;
-    flex-direction: row;
-    margin: 2%;
-    text-decoration: solid;
-    color: black;
-}
+    body
+    {
+        font-size: 24px;
+    }
 
-.githubButton
-{
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 2%;
-    
-}
+    .flex-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
 
-.githubButton:hover
-{
-    cursor: pointer;
-}
-
-.title
-{
-    text-decoration: underline;
-    padding-right: 5%;
-    margin-right: 5%;
+    .responsive
+    {
+        width: 25%;
+    }
 }
