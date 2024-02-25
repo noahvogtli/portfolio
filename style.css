@@ -154,6 +154,15 @@ body
     margin: 20%;
 }
 
+.resume-pdf
+{
+    width: 80%;
+    height: auto;
+    margin: auto; 
+    border: 1%; 
+    border-style: solid;
+}
+
 @media only screen and (min-width: 1000px) {
 
     body
@@ -188,6 +197,11 @@ body
     .topnav
     {
         display:block;
+    }
+
+    .resume-pdf
+    {
+        width: 45%;
     }
 }
 
