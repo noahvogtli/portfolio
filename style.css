@@ -26,9 +26,9 @@ body
 .flex-container
 {
     margin-top: 5%;
-    border: 1%;
+    /* border: 1%;
     border-style: solid;
-    border-color: black;
+    border-color: black; */
 }
 
 .responsive {
@@ -136,11 +136,11 @@ body
 {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1%;
-    border-style: solid;
     margin-top: 5%;
     align-items: center;
     text-align: center;
+    /* border: 1%;
+    border-style: solid; */
 
 }
 
@@ -154,9 +154,9 @@ body
     .flex-container
     {
         display:flex;
-        border: 1%;
+        /* border: 1%;
         border-style: solid;
-        border-color: black;
+        border-color: black; */
     }
 
     .responsive
