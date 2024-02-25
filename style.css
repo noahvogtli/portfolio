@@ -26,7 +26,9 @@ body
 .flex-container
 {
     margin-top: 5%;
-
+    border: 1%;
+    border-style: solid;
+    border-color: black;
 }
 
 .responsive {
@@ -98,7 +100,48 @@ body
 {
     margin-top: 5vw;
     margin-left: 5vw;
+    margin-right: 5vw;
     text-align: left;
+}
+
+.resume-heading
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.download-button {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading-container
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1%;
+    border-style: solid;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -110,12 +153,22 @@ body
 
     .flex-container
     {
-        display: flex;
-        flex-direction: row;
+        display:flex;
+        border: 1%;
+        border-style: solid;
+        border-color: black;
     }
 
     .responsive
     {
         width: 25%;
     }
+
+    .resume-heading
+    {
+        margin: auto;
+        
+    }
 }
+
+
