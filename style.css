@@ -20,7 +20,7 @@ body
     padding: 0;
     scroll-margin-top: 20px;
     font-size: 20px;
-    font-family: 'Urbanist';
+    font-family: 'Lato';
 }
 
 .flex-container
@@ -29,6 +29,9 @@ body
     /* border: 1%;
     border-style: solid;
     border-color: black; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .responsive {
@@ -55,7 +58,7 @@ body
     text-align: center;
     padding: 1.5% 1.1%;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 18px;
 }
 
 /* Change the color of links on hover */
@@ -102,6 +105,7 @@ body
     margin-left: 5vw;
     margin-right: 5vw;
     text-align: left;
+    line-height: 35px;
 }
 
 .resume-heading
@@ -113,7 +117,8 @@ body
 }
 
 .download-button {
-    padding: 10px 15px;
+    padding: 10px 10px;
+    margin-right: 1%;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
@@ -144,6 +149,11 @@ body
 
 }
 
+.space
+{
+    margin: 20%;
+}
+
 @media only screen and (min-width: 1000px) {
 
     body
@@ -159,6 +169,11 @@ body
         border-color: black; */
     }
 
+    .about-me
+    {
+        line-height: 50px;
+    }
+
     .responsive
     {
         width: 25%;
@@ -168,6 +183,11 @@ body
     {
         margin: auto;
         
+    }
+
+    .topnav
+    {
+        display:block;
     }
 }
 
