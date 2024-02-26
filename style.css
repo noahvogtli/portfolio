@@ -163,6 +163,44 @@ body
     border-style: solid;
 }
 
+.project-boxes {
+    box-sizing: border-box;
+    border: 1px solid gray; /* Choose your desired border style and width */
+    border-radius: 5px;
+    margin: 5%;
+    background-color: rgb(76, 76, 76);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    color: white;
+    text-decoration: none;
+    padding-top: 5%;
+}
+
+.project-boxes:hover
+{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.fill-div
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
 @media only screen and (min-width: 1000px) {
 
     body
@@ -202,6 +240,23 @@ body
     .resume-pdf
     {
         width: 45%;
+    }
+
+    .projects-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .project-boxes
+    {
+        height: 400px;
+        width: 400px;
+        margin: 0;
+        margin-top: 5%;
+        padding-top: 2%;
     }
 }
 
