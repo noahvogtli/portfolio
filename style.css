@@ -15,12 +15,15 @@
 
 body
 {
-    background-color: white;
+    background: rgb(42,42,42);
+    background: radial-gradient(circle, rgba(42,42,42,1) 0%, rgba(14,14,14,1) 100%);
     margin: 0;
     padding: 0;
     scroll-margin-top: 20px;
     font-size: 20px;
-    font-family: 'Lato';
+    font-family: "Montserrat";
+    color: white;
+    
 }
 
 .flex-container
@@ -32,6 +35,8 @@ body
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .responsive {
@@ -46,9 +51,13 @@ body
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgb(76, 76, 76);
+    background-color: black;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    /* display:grid;
+    grid-template-columns: 1fr 1fr 1fr; */
 }
 
 /* Style the links inside the navigation bar */
@@ -85,7 +94,6 @@ body
 }
 
 
-
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
@@ -99,13 +107,22 @@ body
     padding-top: 102px;
 }
 
-.about-me
+.description
 {
-    margin-top: 5vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin: 7.5%;
     text-align: left;
     line-height: 35px;
+    text-align: center;
+}
+
+.description p
+{
+    font-size: 24px;
+}
+
+.description h1
+{
+    font-size: 48px;
 }
 
 .resume-heading
@@ -166,7 +183,7 @@ body
 .project-boxes {
     box-sizing: border-box;
     border: 1px solid gray; /* Choose your desired border style and width */
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 5%;
     background-color: rgb(76, 76, 76);
     display: flex;
@@ -193,6 +210,44 @@ body
     text-align: center;
 }
 
+.about-heading
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.about-div
+{
+    margin: 10%;
+}
+
+.about-div p
+{
+    font-size: 18px;
+}
+
+.skills-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    flex-wrap: wrap;
+}
+
+.skills-box
+{
+    background:none;
+    border: 1%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(123, 3, 3);
+    color: rgb(123, 3, 3);
+    padding: 0% 1%;
+    margin-top: 2%;
+    margin-right: 1%;
+}
 
 .fill-div
 {
@@ -214,11 +269,17 @@ body
         /* border: 1%;
         border-style: solid;
         border-color: black; */
+        flex-direction: row-reverse;
     }
 
-    .about-me
+    .description
     {
         line-height: 50px;
+        margin-top: 5vw;
+        margin-left: 10vw;
+        margin-right: 5vw;
+        text-align: left;
+        line-height: 35px;
     }
 
     .responsive
@@ -232,10 +293,10 @@ body
         
     }
 
-    .topnav
+    /* .topnav
     {
         display:block;
-    }
+    } */
 
     .resume-pdf
     {
@@ -257,6 +318,29 @@ body
         margin: 0;
         margin-top: 5%;
         padding-top: 2%;
+        border-radius: 20px;
+    }
+
+    .about-div p
+    {
+        font-size: 24px;
+    }
+
+    .about-div h5
+    {
+        margin-top: 10%;
+    }
+
+    .skills-div
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skills-box
+    {
+        padding: 0% 1%;
+        margin-top: 2%;
     }
 }
 
