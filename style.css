@@ -146,8 +146,8 @@ body
     border: 1px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(123, 3, 3);
-    color: rgb(123, 3, 3);
+    border-color: rgb(136, 1, 1);
+    color: rgb(136, 1, 1);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -184,7 +184,7 @@ body
 .project-boxes:hover
 {
     color: white;
-    border-color: rgb(123, 3, 3);
+    border-color: rgb(136, 1, 1);
 }
 
 
@@ -234,8 +234,8 @@ body
     border: 1px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(123, 3, 3);
-    color: rgb(123, 3, 3);
+    border-color: rgb(136, 1, 1);
+    color: rgb(136, 1, 1);
     padding: 0% 1%;
     margin-top: 2%;
     margin-right: 1%;
@@ -246,6 +246,65 @@ body
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.contact-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+
+.contact-container p
+{
+    font-size: 14px;
+}
+
+.contact-container h5
+{
+    font-size: 16px ;
+    
+}
+
+.contact-box
+{
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 5%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    padding: 0% 10%;
+    color: white;
+    text-decoration: none;
+    padding-top: 2%;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.social-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.social-flex a
+{
+    color: white;
+    font-size: 18px;
+}
+
+.social-flex a:hover
+{
+    color: rgb(198, 198, 198);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -281,6 +340,7 @@ body
         border-style: solid;
         border-color: black; */
         flex-direction: row-reverse;
+        margin-top: 10%;
     }
 
     .description
@@ -296,18 +356,7 @@ body
     .responsive
     {
         width: 25%;
-        margin-top: 5%;
-    }
-
-
-    /* .topnav
-    {
-        display:block;
-    } */
-
-    .resume-pdf
-    {
-        width: 45%;
+        margin-top: 0%;
     }
 
     .projects-container
@@ -356,6 +405,11 @@ body
     .project-boxes h6
     {
         margin-top: -10%;
+    }
+
+    .space
+    {
+        margin: 10%;
     }
 }
 
