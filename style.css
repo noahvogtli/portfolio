@@ -136,34 +136,13 @@ body
     align-items: center;
     text-align: center;
     display: flex;
+    margin-top: 0%;
 }
 
-.download-button {
-    padding: 10px 10px;
-    margin-right: 1%;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3498db;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    outline: none;
-}
 
-.actions-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.heading-container
+.resume-container
 {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5%;
+    display:block;
     align-items: center;
     text-align: center;
     /* border: 1%;
@@ -171,26 +150,44 @@ body
 
 }
 
+.actions-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button
+{
+    background: none;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(123, 3, 3);
+    color: rgb(123, 3, 3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    padding: 1% 2%;
+    margin-right: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .space
 {
     margin: 20%;
 }
 
-.resume-pdf
-{
-    width: 80%;
-    height: auto;
-    margin: auto; 
-    border: 1%; 
-    border-style: solid;
-}
 
 .project-boxes {
     box-sizing: border-box;
-    border: 1px solid gray; /* Choose your desired border style and width */
+    border: 1px solid gray;
     border-radius: 10px;
     margin: 5%;
-    background-color: rgb(76, 76, 76);
+    background: none;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -198,12 +195,13 @@ body
     color: white;
     text-decoration: none;
     padding-top: 5%;
+    flex-direction: column;
 }
 
 .project-boxes:hover
 {
-    background-color: rgb(62, 62, 62);
     color: white;
+    border-color: rgb(123, 3, 3);
 }
 
 
@@ -241,10 +239,15 @@ body
     flex-wrap: wrap;
 }
 
+.about-div h5
+{
+    margin-top: 25%;
+}
+
 .skills-box
 {
     background:none;
-    border: 1%;
+    border: 1px;
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(123, 3, 3);
@@ -292,11 +295,6 @@ body
         width: 25%;
     }
 
-    .resume-heading
-    {
-        margin: auto;
-        
-    }
 
     /* .topnav
     {
@@ -312,18 +310,20 @@ body
     {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: row;
     }
 
     .project-boxes
     {
-        height: 400px;
+        height: 200px;
         width: 400px;
         margin: 0;
         margin-top: 5%;
         padding-top: 2%;
         border-radius: 20px;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .about-div p
@@ -346,6 +346,7 @@ body
     {
         padding: 0% 1%;
         margin-top: 2%;
+        border: 1%;
     }
 }
 
