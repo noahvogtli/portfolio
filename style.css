@@ -13,6 +13,11 @@
     src: url("/data/Lato/Lato-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("data/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
 body
 {
     background: rgb(42,42,42);
