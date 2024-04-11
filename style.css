@@ -361,6 +361,14 @@ body
     border-color: rgb(107, 0, 0);
 }
 
+.project-languages
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
 @media only screen and (min-width: 1000px) {
 
     body
@@ -475,6 +483,13 @@ body
         margin-left: 5%;
         margin-right: 5%;
 
+    }
+
+    .project-languages
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;;
     }
 }
 
