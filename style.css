@@ -378,6 +378,15 @@ body
     margin-top: 5%;
 }
 
+.blog
+{
+    background-color:ghostwhite;
+    border-radius: 5px;
+    color: black;
+    padding: 5%;
+    border: 2px solid black;
+}
+
 @media only screen and (min-width: 1000px) {
 
     body
